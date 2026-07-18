@@ -1,0 +1,14 @@
+[package]
+name = "dataforge"
+version = "0.1.0"
+edition = "2024"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "dataforge"
+crate-type = ["cdylib"]
+
+[dependencies]
+memchr = { version = "2.8.3", features = ["core", "use_std"] }
+pyo3 = "0.28.3"
+rayon = "1.12.0"
